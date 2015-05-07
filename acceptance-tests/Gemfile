@@ -1,0 +1,5 @@
+source 'http://rubygems.org'
+
+gem 'cucumber'
+gem 'rake', '0.8.7'
+gem 'rspec', '~> 2.0.0'
