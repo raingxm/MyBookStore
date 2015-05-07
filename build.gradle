@@ -1,36 +1,41 @@
 buildscript {
     repositories {
-	mavenCentral()
+        mavenCentral()
     }
+
     dependencies {
-	classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")	
-    } 
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+        classpath("com.github.samueltbrown:gradle-cucumber-plugin:0.8")
+    }
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 apply plugin: 'jetty'
+apply plugin: "com.github.samueltbrown.cucumber"
+
 
 jar {
     baseName = 'gs-serving-web-content'    
     version = '0.1.0'
 }
-repositories {
-    mavenCentral()    
-}
 
+repositories {
+    mavenCentral()
+}
 
 dependencies {
     compile (
-	"org.springframework.boot:spring-boot-starter-thymeleaf",
-	"org.springframework:spring-web:4.1.2.RELEASE",
-        "org.springframework:spring-webmvc:4.1.2.RELEASE",
-	"org.springframework:spring-aop:4.1.2.RELEASE"
-	)
+	    "org.springframework.boot:spring-boot-starter-thymeleaf",
+	    "org.springframework:spring-web:4.1.2.RELEASE",
+	    "org.springframework:spring-aop:4.1.2.RELEASE",
+        "org.springframework:spring-webmvc:4.1.2.RELEASE"
+    )
     testCompile("junit:junit")
 }
 
+jettyRun.contextPath = ''
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
