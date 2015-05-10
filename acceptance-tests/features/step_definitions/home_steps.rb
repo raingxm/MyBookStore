@@ -1,11 +1,11 @@
-When (/^I visit the home page$/) do
-  visit 'http://localhost:8080'
-end
-
 Then(/^I will see "([^"]*)"$/) do |message|
-  p message
+  page.should have_content message
 end
 
 Given(/^I am a ordinary user$/) do
-  p "hello"
+
+end
+
+When (/^I visit the home page$/) do
+  visit find_url
 end
