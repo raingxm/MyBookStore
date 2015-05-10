@@ -1,5 +1,5 @@
 When (/^I visit the home page$/) do
-  p "hi"
+  visit 'http://localhost:8080'
 end
 
 Then(/^I will see "([^"]*)"$/) do |message|
@@ -7,5 +7,5 @@ Then(/^I will see "([^"]*)"$/) do |message|
 end
 
 Given(/^I am a ordinary user$/) do
-
+  p "hello"
 end
