@@ -1,12 +1,10 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-    <link rel="stylesheet" href="<c:url value='/css/home.css' />" type="text/css"/>
+    <link href="<c:url value='/scripts/css/home.css' />" rel="stylesheet"/>
 </head>
 <body>
-    <header class="head">Welcome to our book Store</header>
+    <div class="welcome">Welcome to our book Store</div>
 	<h1>${message}</h1>
 </body>
 </html>
