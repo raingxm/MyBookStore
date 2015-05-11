@@ -9,3 +9,8 @@ end
 When (/^I visit the home page$/) do
   visit find_url
 end
+
+
+And(/^I will see "([^"]*)" button in the navigation$/) do |nav|
+  page.should have_content nav
+end
