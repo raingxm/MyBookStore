@@ -6,3 +6,4 @@ Feature: User visit home page of the book store,
     When I visit the home page
     Then I will see "Welcome to our book Store"
     And I will see "Home" button in the navigation
+    And I will see "My Cart" button in the navigation
