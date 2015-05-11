@@ -6,6 +6,5 @@ public class HomeControllerTest {
     @Test
     public void testHelloPage() throws Exception {
         HomeController homeController = new HomeController();
-
     }
 }

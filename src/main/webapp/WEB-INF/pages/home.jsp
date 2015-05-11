@@ -1,3 +1,4 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@include file="header.jsp" %>
   <nav class="navbar navbar-inverse">
     <div class="container">
@@ -14,10 +15,7 @@
   <div class="container">
     <div class="welcome">
       <h1>Welcome to our book Store</h1>
-    </div>
-    <div class="describe">
-      <p>${message}</p>
+      <spring:message code="home.page.hello" />
     </div>
   </div>
-
 <%@include file="footer.jsp"%>
