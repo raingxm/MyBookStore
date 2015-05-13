@@ -15,6 +15,13 @@ apply plugin: 'spring-boot'
 apply plugin: 'jetty'
 apply plugin: "com.github.samueltbrown.cucumber"
 
+idea {
+    module {
+        sourceDirs += file('src/main/java')
+
+        testSourceDirs += file('src/test/java')
+    }
+}
 
 jar {
     baseName = 'gs-serving-web-content'    
