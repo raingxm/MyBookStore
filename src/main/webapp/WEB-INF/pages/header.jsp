@@ -5,4 +5,5 @@
         <link href="<c:url value='/scripts/css/home.css' />" rel="stylesheet"/>
     </head>
     <body>
+    <%@include file="partial/navigation.jsp"%>
 
