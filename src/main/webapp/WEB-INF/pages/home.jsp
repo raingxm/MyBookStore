@@ -1,4 +1,3 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@include file="header.jsp" %>
   <div class="container">
     <div class="welcome">
