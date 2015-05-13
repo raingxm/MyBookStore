@@ -11,6 +11,10 @@ When (/^I visit the home page$/) do
 end
 
 
-And(/^I will see "([^"]*)" button in the navigation$/) do |nav|
-  page.should have_content nav
+And(/^I will see "([^"]*)" link in the navigation$/) do |nav|
+  find_link(nav)
+end
+
+When(/^I click "([^"]*)" link$/) do |link|
+  click_link(link)
 end
