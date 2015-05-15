@@ -8,4 +8,4 @@ Feature: User visit home page of the book store,
     And I will see "Home" link in the navigation
     And I will see "My Cart" link in the navigation
     When I click "Book Store" link
-    And I will see "Book List Here"
+    And I will come book store page
