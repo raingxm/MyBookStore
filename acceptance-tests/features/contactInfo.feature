@@ -5,3 +5,5 @@ Feature: If user want to know who create the web page, and want to know more
   Scenario: As I user, I want to see a page display web admin or maintainer's info.
     Given I am a ordinary user
     When I visit contact us page
+    Then I will see "About raingxm"
+    And I will see "Personal Information"

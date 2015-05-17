@@ -22,3 +22,7 @@ end
 And(/^I will come book store page$/) do
   expect(page.current_path).to have_content "/bookList"
 end
+
+And(/^I will back to Home page$/) do
+  expect(page.current_path).to have_content "/"
+end

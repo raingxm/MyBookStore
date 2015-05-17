@@ -9,3 +9,5 @@ Feature: User visit home page of the book store,
     And I will see "My Cart" link in the navigation
     When I click "Book Store" link
     And I will come book store page
+    When I click "Home" link
+    And I will back to Home page
