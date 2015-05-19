@@ -11,7 +11,7 @@
                 <th>Description</th>
                 <th>Author</th>
                 <th>Price</th>
-                <th>Details</th>
+                <th>Action</th>
             </tr>
             <tr>
                 <td>All the Light We Cannot See: A Novel </td>
@@ -22,16 +22,22 @@
                 <td>
                     <button type="button" class="btn btn-primary btn-lg"
                             data-toggle="modal" data-target="#myModal">
-                    Launch demo modal
+                        Order
                     </button>
                 </td>
             </tr>
             <tr>
                 <td>Effective Java (2nd Edition)</td>
-                <td>Look no further! Effective Java™, Second Edition, brings together seventy-eight indispensable programmer’s rules
+                <td>Look no further! Effective Java, Second Edition, brings together seventy-eight indispensable programmer’s rules
                     of thumb: working, best-practice solutions for the programming challenges you encounter every day.</td>
                 <td>Joshua Bloch</td>
                 <td>$31.72</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-lg"
+                            data-toggle="modal" data-target="#myModal">
+                        Order
+                    </button>
+                </td>
             </tr>
         </table>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -39,14 +45,17 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title" id="myModalLabel">User Info</h4>
                     </div>
                     <div class="modal-body">
-                        Hello
+                        Name: <input type="text" /><br/>
+                        Phone: <input type="text" /><br/>
+                        Email: <input type="text" /><br/>
+                        Address: <input type="textArea" /><br/>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
