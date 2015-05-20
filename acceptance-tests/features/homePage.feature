@@ -7,6 +7,9 @@ Feature: User visit home page of the book store,
     Then I will see "Welcome to our book Store"
     And I will see "Home" link in the navigation
     And I will see "My Cart" link in the navigation
+    When I click "Book Category" link
+    And I will see "Book Store" link in the navigation
+    And I will see "History" link in the navigation
     When I click "Book Store" link
     And I will come book store page
     When I click "Home" link

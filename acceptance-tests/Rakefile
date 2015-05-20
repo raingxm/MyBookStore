@@ -2,3 +2,8 @@ desc "clean capybara report"
 task :clean_report do
   sh 'rm capybara-2015*.html'
 end
+
+desc "run cucumber test"
+task :cucumber_test do
+  sh 'cucumber'
+end
