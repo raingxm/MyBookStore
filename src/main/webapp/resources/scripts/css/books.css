@@ -9,3 +9,11 @@
     font-size: 60px;
     font-weight: normal;
 }
+
+.user-info {
+    height: 200px;
+}
+
+.user-info div {
+    height: 40px;
+}

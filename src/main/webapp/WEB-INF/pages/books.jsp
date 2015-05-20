@@ -28,7 +28,7 @@
             </tr>
             <tr>
                 <td>Effective Java (2nd Edition)</td>
-                <td>Look no further! Effective Java, Second Edition, brings together seventy-eight indispensable programmer’s rules
+                <td>Look no further! Effective Java, Second Edition, brings together seventy-eight indispensable programmer's rules
                     of thumb: working, best-practice solutions for the programming challenges you encounter every day.</td>
                 <td>Joshua Bloch</td>
                 <td>$31.72</td>
@@ -47,11 +47,27 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">User Info</h4>
                     </div>
-                    <div class="modal-body">
-                        Name: <input type="text" /><br/>
-                        Phone: <input type="text" /><br/>
-                        Email: <input type="text" /><br/>
-                        Address: <input type="textArea" /><br/>
+
+                    <div class="modal-body user-info">
+                        <div class="col-md-12">
+                            <span class="col-md-2 col-md-offset-1">Name:</span>
+                            <input type="text" name="name" class="col-md-9" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <span class="col-md-2 col-md-offset-1">Phone:</span>
+                            <input type="text" name="phone" class="col-md-9" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <span class="col-md-2 col-md-offset-1">Email:</span>
+                            <input type="text" name="email" class="col-md-9" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <span class="col-md-2 col-md-offset-1">Address:</span>
+                            <input type="text" name="address" class="col-md-9" />
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
