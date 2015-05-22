@@ -4,3 +4,10 @@
     font-size: 16px;
 }
 
+.contact-info .glyphicon {
+    font-size: 20px;
+}
+
+.contact-info li {
+    line-height: 40px;
+}

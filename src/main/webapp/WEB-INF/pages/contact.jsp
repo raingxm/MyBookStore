@@ -6,17 +6,21 @@
         Sometimes I am a shy boy, sometimes I have great passion.
     </p>
     <h3>Personal Information</h3>
-    <ul>
-        <li><strong>Email:</strong>&nbsp; raingxm@gmail.com</li>
-    </ul>
-    <ul>
-        <li><strong>Blog:</strong>&nbsp; <a href="http://raingxm.lofter.com">raingxm.lofter.com</a></li>
-    </ul>
-    <ul>
+    <ul class="list-unstyled contact-info">
+        <li>
+            <i class="glyphicon glyphicon-envelope"></i>
+            <strong>Email:</strong> raingxm@gmail.com
+        </li>
+        <li>
+            <strong>Blog:</strong>&nbsp; <a href="http://raingxm.lofter.com">raingxm.lofter.com</a></li>
         <li><strong>Github Page:</strong>&nbsp;
             <a href="https://github.com/raingxm">
                 https://github.com/raingxm
             </a>
+        </li>
+        <li>
+            <strong>Education:</strong>&nbsp;
+            Xidian University
         </li>
     </ul>
 </div>
