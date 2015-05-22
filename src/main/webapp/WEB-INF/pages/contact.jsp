@@ -19,6 +19,7 @@
             </a>
         </li>
         <li>
+            <i class="glyphicon glyphicon-education"></i>
             <strong>Education:</strong>&nbsp;
             Xidian University
         </li>
