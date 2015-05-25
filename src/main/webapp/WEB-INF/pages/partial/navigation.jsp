@@ -9,7 +9,7 @@
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/bookList">Book Store</a></li>
-                        <li><a href="#">History</a></li>
+                        <li><a href="/bookList/history">History</a></li>
                         <li><a href="#">Technology</a></li>
                         <li><a href="#">Literature</a></li>
                     </ul>

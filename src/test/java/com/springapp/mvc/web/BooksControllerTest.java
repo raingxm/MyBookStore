@@ -1,5 +1,6 @@
-package com.springapp.mvc;
+package com.springapp.mvc.web;
 
+import com.springapp.mvc.web.BooksController;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

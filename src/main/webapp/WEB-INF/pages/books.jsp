@@ -39,6 +39,19 @@
                     </button>
                 </td>
             </tr>
+            <c:forEach var="historyBook" items="${ historical }" >
+                <td>${ historyBook.name }</td>
+                <td>${ historyBook.describe } </td>
+                <td>${ historyBook.author }</td>
+                <td>$${ historyBook.price }</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-lg"
+                            data-toggle="modal" data-target="#myModal">
+                        Order
+                    </button>
+                </td>
+            </c:forEach>
+
         </table>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
