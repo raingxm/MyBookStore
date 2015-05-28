@@ -19,7 +19,7 @@ public class BooksController {
     public ModelAndView display() {
         ModelAndView modelAndView = new ModelAndView("books");
         BookService bookService = new BookService();
-//        modelAndView.getModel().put("historical", bookService.getBooks());
+        modelAndView.getModel().put("bookList", bookService.getBooks());
         return modelAndView;
     }
 
@@ -29,7 +29,7 @@ public class BooksController {
         Book book = new Book("hela", "andi", "goodbook", 20.3);
         List historyBooks = new ArrayList<Book>();
         historyBooks.add(book);
-        modelAndView.getModel().put("historical", historyBooks);
+        modelAndView.getModel().put("bookList", historyBooks);
         return modelAndView;
     }
 

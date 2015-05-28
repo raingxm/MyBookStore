@@ -13,43 +13,19 @@
                 <th>Price</th>
                 <th>Action</th>
             </tr>
-            <tr>
-                <td>All the Light We Cannot See: A Novel </td>
-                <td>From the highly acclaimed, multiple award-winning Anthony Doerr, the beautiful, stunningly ambitious instant New York Times bestseller about a blind French girl and a German boy
-                    whose paths collide in occupied France as both try to survive the devastation of World War II.</td>
-                <td>Anthony Doerr </td>
-                <td>$15.53</td>
-                <td>
-                    <button type="button" class="btn btn-primary btn-lg"
-                            data-toggle="modal" data-target="#myModal">
-                        Order
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>Effective Java (2nd Edition)</td>
-                <td>Look no further! Effective Java, Second Edition, brings together seventy-eight indispensable programmer's rules
-                    of thumb: working, best-practice solutions for the programming challenges you encounter every day.</td>
-                <td>Joshua Bloch</td>
-                <td>$31.72</td>
-                <td>
-                    <button type="button" class="btn btn-primary btn-lg"
-                            data-toggle="modal" data-target="#myModal">
-                        Order
-                    </button>
-                </td>
-            </tr>
-            <c:forEach var="historyBook" items="${ historical }" >
-                <td>${ historyBook.name }</td>
-                <td>${ historyBook.describe } </td>
-                <td>${ historyBook.author }</td>
-                <td>$${ historyBook.price }</td>
-                <td>
-                    <button type="button" class="btn btn-primary btn-lg"
-                            data-toggle="modal" data-target="#myModal">
-                        Order
-                    </button>
-                </td>
+            <c:forEach var="book" items="${ bookList }" >
+                <tr>
+                    <td>${ book.name }</td>
+                    <td>${ book.describe } </td>
+                    <td>${ book.author }</td>
+                    <td>$${ book.price }</td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-lg"
+                                data-toggle="modal" data-target="#myModal">
+                            Order
+                        </button>
+                    </td>
+                </tr>
             </c:forEach>
 
         </table>
@@ -90,6 +66,5 @@
             </div>
         </div>
     </div>
-
 </div>
 <%@include file="footer.jsp"%>
