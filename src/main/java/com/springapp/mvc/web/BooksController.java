@@ -1,5 +1,6 @@
 package com.springapp.mvc.web;
 
+import com.springapp.mvc.service.BookService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,13 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
 @Controller
 @RequestMapping("/bookList")
 public class BooksController {
     @RequestMapping(method = RequestMethod.GET)
-    public String display() {
-        return "books";
+    public ModelAndView display() {
+        ModelAndView modelAndView = new ModelAndView("books");
+        BookService bookService = new BookService();
+//        modelAndView.getModel().put("historical", bookService.getBooks());
+        return modelAndView;
     }
 
     @RequestMapping(value="/history", method = RequestMethod.GET)
