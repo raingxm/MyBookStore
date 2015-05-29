@@ -1,6 +1,7 @@
 package com.springapp.mvc.web;
 
 import com.springapp.mvc.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,10 +16,12 @@ import java.util.Map;
 @Controller
 @RequestMapping("/bookList")
 public class BooksController {
+    @Autowired
+    private BookService bookService;
+
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView display() {
         ModelAndView modelAndView = new ModelAndView("books");
-        BookService bookService = new BookService();
         modelAndView.getModel().put("bookList", bookService.getBooks());
         return modelAndView;
     }

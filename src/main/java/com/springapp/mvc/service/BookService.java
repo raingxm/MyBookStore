@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.springapp.mvc.model.Book;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -12,6 +13,7 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class BookService {
     private RestTemplate restTemplate = new RestTemplate();
     public List<Book> getBooks() {
