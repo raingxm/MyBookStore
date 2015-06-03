@@ -17,7 +17,18 @@
     </bean>
 
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basenames" value="WEB-INF/properties/messages"/>
+        <property name="basenames">
+            <list>
+                <value>WEB-INF/properties/messages</value>
+            </list>
+        </property>
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>
+
+    <bean id="configProperties"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="resources/book-store.properties" />
+    </bean>
+
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
 </beans>
