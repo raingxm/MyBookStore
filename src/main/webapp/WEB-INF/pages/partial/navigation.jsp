@@ -1,6 +1,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div id="navbar">
+            <a href="/" class="navbar-brand"><img alt="logo" src="/img/book-logo.jpg"/></a>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li>
