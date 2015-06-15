@@ -29,6 +29,7 @@ jar {
 }
 
 repositories {
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     mavenCentral()
 }
 
@@ -39,7 +40,7 @@ dependencies {
 	    "org.springframework:spring-aop:4.1.2.RELEASE",
         "org.springframework:spring-webmvc:4.1.2.RELEASE",
         "org.springframework.boot:spring-boot-starter-data-rest",
-        "org.springframework.boot:spring-boot-starter-data-mongodb",
+        "org.mongodb:mongo-java-driver:3.1.0-SNAPSHOT",
         "com.google.code.gson:gson:2.2.4"
     )
     testCompile("junit:junit")
