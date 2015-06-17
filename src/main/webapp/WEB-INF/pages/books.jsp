@@ -38,6 +38,11 @@
                     </div>
                     <form action="/saveOrder" method="post">
                         <div class="modal-body user-info">
+                            <div class="col-lg-12">
+                                You like:
+                                <span class="favor-book-title"></span>
+                                Want know more, leave your contact info here.
+                            </div>
                             <div class="col-md-12">
                                 <span class="col-md-2 col-md-offset-1">Name:</span>
                                 <input type="text" name="name" class="col-md-9"/>
