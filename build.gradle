@@ -24,7 +24,7 @@ idea {
 }
 
 jar {
-    baseName = 'gs-serving-web-content'    
+    baseName = 'gs-serving-web-content'
     version = '0.1.0'
 }
 
@@ -46,8 +46,14 @@ dependencies {
     testCompile("junit:junit")
 }
 
+mainClassName = "src.main.java.com.springapp.mvc.web.HomeController"
+
 jettyRun.contextPath = ''
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+//task functionalTest(description: "run cucumber test") << {
+//    executable = './setup_local_fast.sh'
+//}
