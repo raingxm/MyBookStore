@@ -3,4 +3,5 @@ jdk:
   - oraclejdk8
   - openjdk7
 script:
-  ./gradlew check
+  - gradle wrapper
+  - ./gradlew check
