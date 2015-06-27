@@ -3,9 +3,5 @@ jdk:
   - oraclejdk8
   - openjdk7
 install: ./install_dependencies.sh
-before_script:
-  - gradle wrapper
-  - ./gradlew jettyRun &> /dev/null &
-  - sleep 10 # give web server some time to bind socket
-script: cd acceptance-tests && bundle exec rake cucumber_test
+script: ./ci_test.sh
 after_script: ./gradlew jettyStop
