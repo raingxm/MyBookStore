@@ -6,8 +6,9 @@ gem 'rspec'
 group :test do
   gem 'cucumber'
   gem 'rspec-expectations'
-  gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'selenium-webdriver', '2.46.2'
+  gem 'poltergeist'
   gem 'launchy'
   gem 'rest-client'
 end
