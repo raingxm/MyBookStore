@@ -4,7 +4,7 @@ require 'capybara/poltergeist'
 
 World(RSpec::Matchers)
 
-$myBookStoreUrl = 'http://localhost:8080/'
+$myBookStoreUrl = 'http://127.0.0.1:8080/'
 
 def find_url(path='')
   $myBookStoreUrl + path
