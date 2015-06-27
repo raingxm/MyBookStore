@@ -5,3 +5,4 @@ jdk:
 rvm:
   - 2.1.0
 install: ./install_dependencies.sh
+script: cd acceptance-tests && bundle exec rake cucumber
