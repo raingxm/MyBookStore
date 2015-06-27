@@ -2,3 +2,6 @@ language: java
 jdk:
   - oraclejdk8
   - openjdk7
+rvm:
+  - 2.1.0
+install: ./install_dependencies.sh
