@@ -6,5 +6,5 @@ rvm:
   - 2.1.0
 install: ./install_dependencies.sh
 before_script: gradle wrapper && ./gradlew jettyRun &> /dev/null &
-script: cd acceptance-tests && rake cucumber_test
+script: cd acceptance-tests && bundle exec rake cucumber_test
 after_script: ./gradlew jettyStop
