@@ -54,6 +54,6 @@ task wrapper(type: Wrapper) {
 
 mainClassName = "com.springapp.mvc.web.HomeController"
 
-//task functionalTest(description: "run cucumber test") << {
-//    executable = './setup_local_fast.sh'
-//}
+task functionalTest(description: "run cucumber test") << {
+    executable = './setup_local_fast.sh'
+}
