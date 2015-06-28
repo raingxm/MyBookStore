@@ -3,5 +3,10 @@ jdk:
   - oraclejdk8
   - openjdk7
 install: ./install_dependencies.sh
-script: ./ci_test.sh
-after_script: ./gradlew jettyStop
+before_script:
+  - gradle wrapper
+  - ./gradlew jettyRun &> /dev/null &
+  - sleep 15
+script:
+  - sleep 15
+  - ./ci_test.sh
