@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cd acceptance-tests && bundle exec rake cucumber_test
+cd acceptance-tests && rake cucumber_test
