@@ -1,35 +1,12 @@
 require 'rspec/expectations'
 require 'capybara/cucumber'
-require 'capybara/poltergeist'
 
+Capybara.default_driver = :selenium
+Capybara.default_selector = :css
 World(RSpec::Matchers)
 
-$myBookStoreUrl = 'http://127.0.0.1:8080/'
+$myBookStoreUrl = 'http://localhost:8080/'
 
 def find_url(path='')
   $myBookStoreUrl + path
-end
-
-
-if ENV['IN_BROWSER']
-  # On demand: non-headless tests via Selenium/WebDriver
-  # To run the scenarios in browser (default: Firefox), use the following command line:
-  # IN_BROWSER=true bundle exec cucumber
-  # or (to have a pause of 1 second between each step):
-  # IN_BROWSER=true PAUSE=1 bundle exec cucumber
-  Capybara.default_driver = :selenium
-  AfterStep do
-    sleep (ENV['PAUSE'] || 0).to_i
-  end
-else
-  # DEFAULT: headless tests with poltergeist/PhantomJS
-  Capybara.register_driver :poltergeist do |app|
-    Capybara::Poltergeist::Driver.new(
-        app,
-        window_size: [1280, 1024]#,
-    #debug:       true
-    )
-  end
-  Capybara.default_driver    = :poltergeist
-  Capybara.javascript_driver = :poltergeist
 end

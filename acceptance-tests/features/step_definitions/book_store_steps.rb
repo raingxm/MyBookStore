@@ -1,5 +1,5 @@
 When(/^I visit Book Store page$/) do
-  visit find_url '/bookList'
+  visit 'http://localhost:8080/bookList'
 end
 
 
