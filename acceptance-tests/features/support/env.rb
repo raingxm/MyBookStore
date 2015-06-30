@@ -3,7 +3,7 @@ require 'capybara/cucumber'
 
 Capybara.default_driver = :selenium
 Capybara.default_selector = :css
-World(RSpec::Matchers)
+Capybara.default_wait_time = 60
 
 $myBookStoreUrl = 'http://localhost:8080/'
 
