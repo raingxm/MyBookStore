@@ -3,6 +3,9 @@ jdk:
   - oraclejdk8
   - openjdk7
 before_install:
+  - rvm install 2.1.0
+  - rvm use 2.1.0
+  - ruby -v
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
