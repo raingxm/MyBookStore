@@ -9,4 +9,3 @@ out/
 .bundle/
 vendor/
 capybara*.html
-gradlew
