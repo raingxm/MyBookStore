@@ -34,7 +34,7 @@ public class BookService {
             return new Gson().fromJson(responseEntity.getBody(), new TypeToken<List<Book>>() {
             }.getType());
         } catch (Exception e) {
-            return new ArrayList<>();
+            return new ArrayList<Book>();
         }
     }
 }
