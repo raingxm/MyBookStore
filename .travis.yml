@@ -1,13 +1,6 @@
 language: java
 jdk:
   - openjdk7
-before_script:
-  - gradle wrapper
-  - ./gradlew jettyRun &> /dev/null &
-  - sleep 15
-script:
-  - sleep 15
-  - ./ci_test.sh
 before_install:
   - rvm install 2.1.0
   - rvm use 2.1.0
@@ -16,3 +9,9 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
 install: ./install_dependencies.sh
+before_script:
+  - gradle wrapper
+  - ./gradlew jettyRun &> /dev/null &
+script:
+  - sleep 15
+  - ./ci_test.sh
