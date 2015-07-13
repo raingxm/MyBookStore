@@ -12,6 +12,7 @@ install: ./install_dependencies.sh
 before_script:
   - gradle wrapper
   - ./gradlew jettyRun &> /dev/null &
+  - sleep 15
 script:
   - sleep 15
   - ./ci_test.sh
