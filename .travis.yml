@@ -13,5 +13,4 @@ before_script:
   - gradle wrapper
   - ./gradlew jettyRun &> /dev/null &
 script:
-  - sleep 15
   - ./ci_test.sh
