@@ -12,5 +12,4 @@ install: ./install_dependencies.sh
 script: ./ci_test.sh
 deploy:
   provider: heroku
-  api_key: 1bae229c-f355-48a2-ace7-276c7e821898
-  app: bookstore
+  api_key: "1bae229c-f355-48a2-ace7-276c7e821898"
