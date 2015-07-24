@@ -12,9 +12,30 @@
     line-height: 40px;
 }
 
+.book-nav {
+    margin-bottom: 0;
+}
+
 .navbar img {
     width: 80px;
     height: 40px;
     position: relative;
     top: -10px;
+}
+
+.main-content {
+    background: url('/img/book.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #666;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
 }

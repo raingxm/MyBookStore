@@ -5,6 +5,7 @@
         <link href="<c:url value='/scripts/css/bootstrap.min.css' />" rel="stylesheet"/>
         <link href="<c:url value='/scripts/css/home.css' />" rel="stylesheet"/>
         <link href="<c:url value='/scripts/css/books.css' />" rel="stylesheet"/>
+        <title>Book Store</title>
     </head>
     <body>
     <%@include file="partial/navigation.jsp"%>

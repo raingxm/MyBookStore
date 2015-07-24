@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse book-nav">
     <div class="container">
         <div id="navbar">
             <a href="/" class="navbar-brand"><img alt="logo" src="/img/book-logo.jpg"/></a>

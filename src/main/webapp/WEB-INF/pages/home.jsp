@@ -1,11 +1,16 @@
 <%@include file="header.jsp" %>
-  <div class="container">
-    <div class="welcome">
-      <h1>Welcome to our book Store</h1>
-      <spring:message code="home.page.hello" />
+    <div class="main-content">
+        <div class="container ">
+            <div class="welcome">
+                <h1>Welcome to our book Store</h1>
+                <spring:message code="home.page.hello"/>
+            </div>
+            <div>
+                Find beautiful book here.
+            </div>
+        </div>
     </div>
-    <div>
-        This related to deploy.
+    <div class="overlay">
+
     </div>
-  </div>
 <%@include file="footer.jsp"%>
