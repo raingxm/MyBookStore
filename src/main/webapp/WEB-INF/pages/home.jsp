@@ -1,13 +1,14 @@
 <%@include file="header.jsp" %>
     <div class="main-content">
         <div class="container ">
-            <div class="welcome">
-                <h1>Welcome to our book Store</h1>
-                <spring:message code="home.page.hello"/>
-            </div>
             <div class="search">
-                <h4>Find beautiful book here.</h4>
-                <input class="search-input" type="text" placeholder="find your book"/>
+                <h1>Relax, Find beautiful book here.</h1>
+                <p>Please search books your like in the following box</p>
+
+                <form action="#">
+                    <input class="search-input" type="text" placeholder="find your book"/>
+                    <button type="submit">Search</button>
+                </form>
             </div>
         </div>
     </div>
