@@ -39,3 +39,16 @@
     height: 100%;
     opacity: 0.3;
 }
+
+.search {
+    text-align: center;
+}
+
+.search .search-input {
+    width: 400px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid white;
+    position: relative;
+    z-index: 10;
+}
