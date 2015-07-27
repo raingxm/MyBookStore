@@ -4,7 +4,7 @@ Feature: User visit home page of the book store,
   Scenario: visit home page and see welcome message
     Given I am a ordinary user
     When I visit the home page
-    Then I will see "Welcome to our book Store"
+    Then I will see "Relax, Find beautiful book here"
     And I will see "Home" link in the navigation
     And I will see "My Cart" link in the navigation
     When I click "Book Category" link
