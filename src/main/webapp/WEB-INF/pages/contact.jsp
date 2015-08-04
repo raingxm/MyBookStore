@@ -1,5 +1,5 @@
 <%@include file="header.jsp"%>
-<div class="container">
+<div id="contactUsPage" class="container">
     <h2>About raingxm</h2>
     <p class="lead text-left">
         I am a programmer now in thoughtworks. In my part time, I like reading play football.

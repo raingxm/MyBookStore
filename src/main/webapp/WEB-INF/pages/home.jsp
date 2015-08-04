@@ -1,5 +1,5 @@
 <%@include file="header.jsp" %>
-    <div class="main-content">
+    <div id="homePage" class="main-content">
         <div class="container ">
             <div class="search">
                 <h1>Relax, Find beautiful book here.</h1>
