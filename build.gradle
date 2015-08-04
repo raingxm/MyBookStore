@@ -1,16 +1,19 @@
 buildscript {
     repositories {
+        maven { url = 'http://kellyrob99.github.com/Jenkins-api-tour/repository' }
         mavenCentral()
     }
 
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
         classpath("com.github.samueltbrown:gradle-cucumber-plugin:0.8")
+        classpath("org.kar:gradle-jslint-plugin:0.2")
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'jslint'
 apply plugin: 'spring-boot'
 apply plugin: 'jetty'
 apply plugin: "com.github.samueltbrown.cucumber"
@@ -44,6 +47,13 @@ dependencies {
         "com.google.code.gson:gson:2.2.4"
     )
     testCompile("junit:junit")
+}
+
+jslint {
+    inputDirs = ['src/main/webapp/resources/scripts/js'];
+    excludes = '**/lib/*.js'
+    includes = '**/*.js'
+    formatterType = 'xml'
 }
 
 jettyRun.contextPath = ''

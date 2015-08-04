@@ -1,4 +1,4 @@
-;(function() {
+(function() {
     var highlightNav = function() {
         $('#navbar > ul > li').removeClass('active');
         if(isExist('#homePage')) {
@@ -10,7 +10,7 @@
 
     var isExist = function(selector) {
         return $(selector).length >= 1;
-    }
+    };
 
     $(document).ready(function() {
         highlightNav();
