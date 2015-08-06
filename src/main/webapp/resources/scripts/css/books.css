@@ -22,6 +22,11 @@
     padding: 10px 20px;
 }
 
-.table .glyphicon.icon:hover {
+.table .glyphicon-heart.icon {
+    color: gray;
+}
+
+.table .glyphicon-heart.icon:hover,
+.table .glyphicon-heart.icon.like {
     color: red;
 }

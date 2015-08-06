@@ -24,7 +24,7 @@
                                 data-toggle="modal" data-target="#myModal">
                             Order
                         </button>
-                        <span class="icon glyphicon glyphicon-heart-empty"></span>
+                        <span class="icon glyphicon glyphicon-heart"></span>
                     </td>
                 </tr>
             </c:forEach>
