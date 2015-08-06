@@ -17,3 +17,11 @@
 .user-info div {
     height: 40px;
 }
+
+.table .glyphicon.icon {
+    padding: 10px 20px;
+}
+
+.table .glyphicon.icon:hover {
+    color: red;
+}

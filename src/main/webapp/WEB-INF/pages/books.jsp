@@ -20,10 +20,11 @@
                     <td>${ book.author }</td>
                     <td>$${ book.price }</td>
                     <td>
-                        <button type="button" class="btn btn-primary btn-lg"
+                        <button type="button" class="btn btn-primary"
                                 data-toggle="modal" data-target="#myModal">
                             Order
                         </button>
+                        <span class="icon glyphicon glyphicon-heart-empty"></span>
                     </td>
                 </tr>
             </c:forEach>
