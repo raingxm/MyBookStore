@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="shortcut icon" href="http://pngimg.com/upload/book_PNG2116.png">
+    <link href="<c:url value='/scripts/css/bootstrap.min.css' />" rel="stylesheet"/>
     <link href="<c:url value='/scripts/css/login.css' />" rel="stylesheet"/>
 </head>
 <body class="login-page">
     <div class="container">
         <form action="" class="form-signin">
-            <h2>Please Sign in</h2>
+            <h2 class="form-signin-heading">Please Sign in</h2>
             <label class="sr-only">Email address</label>
             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
             <label for="inputPassword" class="sr-only">Password</label>
