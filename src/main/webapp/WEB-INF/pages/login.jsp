@@ -12,7 +12,7 @@
 </head>
 <body class="login-page">
     <%@include file="partial/navigation.jsp"%>
-    <div class="container">
+    <div class="container" id="loginPage">
         <form action="" class="form-signin">
             <h2 class="form-signin-heading">Please Sign in</h2>
             <label class="sr-only">Email address</label>
@@ -28,5 +28,4 @@
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
     </div>
-</body>
-</html>
+    <%@include file="footer.jsp"%>

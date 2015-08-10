@@ -5,6 +5,8 @@
             $('#navbar .home').addClass('active');
         } else if(isExist('#contactUsPage')) {
             $('#navbar .contact-us').addClass('active');
+        } else if(isExist('#loginPage')) {
+            $('#navbar .login').addClass('active');
         }
     };
 

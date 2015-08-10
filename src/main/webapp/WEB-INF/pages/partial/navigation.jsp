@@ -19,8 +19,8 @@
                 <li class="contact-us"><a href="/contactUs">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/register">Register</a></li>
-                <li><a href="/login">Login</a></li>
+                <li class="register"><a href="/register">Register</a></li>
+                <li class="login"><a href="/login">Login</a></li>
             </ul>
         </div>
     </div>
