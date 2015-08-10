@@ -18,6 +18,10 @@
                 <li class="cart"><a href="#">My Cart</a></li>
                 <li class="contact-us"><a href="/contactUs">Contact Us</a></li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Register</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
         </div>
     </div>
 </nav>
