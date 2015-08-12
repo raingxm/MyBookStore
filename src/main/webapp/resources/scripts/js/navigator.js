@@ -7,6 +7,8 @@
             $('#navbar .contact-us').addClass('active');
         } else if(isExist('#loginPage')) {
             $('#navbar .login').addClass('active');
+        } else if(isExist('#registerPage')) {
+            $('#navbar .register').addClass('active');
         }
     };
 

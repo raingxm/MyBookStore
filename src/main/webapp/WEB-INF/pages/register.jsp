@@ -10,9 +10,9 @@
     <link href="<c:url value='/scripts/css/home.css' />" rel="stylesheet"/>
     <link href="<c:url value='/scripts/css/register.css' />" rel="stylesheet"/>
 </head>
-<body class="login-page">
+<body class="register-page">
 <%@include file="partial/navigation.jsp"%>
-<div class="container" id="loginPage">
+<div class="container" id="registerPage">
     <form action="" class="form-register">
         <h2 class="form-register-heading">Register</h2>
 
