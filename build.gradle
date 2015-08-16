@@ -46,7 +46,9 @@ dependencies {
         "org.mongodb:mongo-java-driver:3.1.0-SNAPSHOT",
         "com.google.code.gson:gson:2.2.4",
         "org.mybatis:mybatis:3.2.4",
-        "org.mybatis:mybatis-spring:1.2.2"
+        "org.mybatis:mybatis-spring:1.2.2",
+        "mysql:mysql-connector-java:5.1.6"
+
     )
     testCompile("junit:junit")
 }
