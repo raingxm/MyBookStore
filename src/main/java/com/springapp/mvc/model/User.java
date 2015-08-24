@@ -5,6 +5,7 @@ public class User {
     private String name;
     private String email;
     private String address;
+    private String passwd;
 
     public User() {
         this.user_id = 0L;
@@ -16,6 +17,14 @@ public class User {
 
     public void setUser_id(Long user_id) {
         this.user_id = user_id;
+    }
+
+    public String getPasswd() {
+        return passwd;
+    }
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
     }
 
     public void setName(String name) {
