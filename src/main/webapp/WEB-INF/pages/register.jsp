@@ -13,7 +13,7 @@
 <body class="register-page">
 <%@include file="partial/navigation.jsp"%>
 <div class="container" id="registerPage">
-    <form action="" class="form-register">
+    <form action="/register" class="form-register" method="post">
         <h2 class="form-register-heading">Register</h2>
 
         <div class="form-group">
