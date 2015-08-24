@@ -11,8 +11,3 @@ before_install:
   --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16
 install: ./install_dependencies.sh
 script: ./ci_test.sh
-deploy:
-  provider: heroku
-  api_key:
-    secure: lbXyYiNO2sjEE3QtBnTvw5sK6zdkLDLApWABzNvJyK+Dj5GssqI9Fs7sXjaZCPrHNpjPXvrnzuxsUcQdrVaoJTINF5BpUDA/cfN8KcfkyWaRnsZBr/rAkDtp9MKn6xaebJ+CvHhX4pSeSPh7Fj64+162zEqGkixGzCvIxmsyDkBmokU75uGkLszS3xF5jfRgMhuSZ9KjddZTrGF3XdC5wAI22omG/a5duh/HiEJjyRi8qSoJsTDXtRY21ZXHPSwSvG1Al13DvrEHMREkmSpe1h5SYLk8bhostLl/mP9upxAp4xU6RowM82swZiMZ92KsS1XC1cEil4HBMeO3Ep0tvw119lrpZd8GLAsdRmQ343MYT6M9Ua27UuwrXtknPqZEenkbjYfq5EpQ2wtCuRmGtcGKC4rPYfM5Y9tseLxoz7uZDHfWZS2pDe6ijUTyY1/z0X1dpQ9S9N1h9eo5zGKgABp8cPmIjm3d8d64lAIzS2GVO04QjRuQA+ZYQL7gzSlm8MN+jHRh803Lobvls9yuRbR2BEo6rbHGvXARGyqRlWaq/rgyy7klzCYYPOZm+VjN94s9w6rT2ib6SaJYBsTyhyMimJrkSwL5N4KWlzKneJaCijE1kp3qTZPgB2Vd4nXmfW5pGXP6j4KaFYWcVZ79IS2N5QnDyrJaO5A7Quw9Idc=
-  app: boiling-temple-6218
