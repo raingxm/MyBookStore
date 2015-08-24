@@ -14,8 +14,7 @@ public class OrderService {
         MongoClient client = new MongoClient();
         MongoDatabase db = client.getDatabase("store");
         MongoCollection collection = db.getCollection("order");
-        Document insertUser = new Document().append("name", user.getName()).
-                append("phone", user.getPhone());
+        Document insertUser = new Document().append("name", user.getName());
         Document order = new Document().append("name", "C plus").append("user", insertUser);
         collection.insertOne(order);
     }
