@@ -2,6 +2,7 @@ package com.springapp.mvc.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,8 +22,7 @@ public class RegisterController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView registerNewUser() {
-        User user = new User();
+    public ModelAndView registerNewUser(@ModelAttribute User user) {
         user.setPasswd("123");
         user.setName("zhangxu");
         user.setEmail("zhangxu@163.com");

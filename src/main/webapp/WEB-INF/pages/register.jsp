@@ -1,6 +1,7 @@
 <%-- get login page from http://bootsnipp.com/snippets/featured/simple-registration-form --%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +18,9 @@
         <h2 class="form-register-heading">Register</h2>
 
         <div class="form-group">
-            <label for="InputName">Enter Name</label>
+            <label>Enter Name</label>
             <div class="input-group">
-                <input type="text" class="form-control" name="name" id="InputName" placeholder="Enter Name" required="">
+                <input type="text" class="form-control" name="name" placeholder="Enter Name"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-asterisk"></span>
                 </span>
@@ -27,25 +28,25 @@
         </div>
 
         <div class="form-group">
-            <label for="InputEmail">Enter Email</label>
+            <label>Enter Email</label>
             <div class="input-group">
-                <input type="email" class="form-control" id="InputEmailFirst" name="email" placeholder="Enter Email" required="">
+                <input type="email" class="form-control" name="email" placeholder="Enter Email" required=""/>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="InputPassword">Enter Password</label>
+            <label>Enter Password</label>
             <div class="input-group">
-                <input type="password" class="form-control" id="InputPassword" name="userpass" placeholder="Enter Password" required="">
+                <input type="password" class="form-control" name="psswd" placeholder="Enter Password" required=""/>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="ConfirmPassword">Confirm Password</label>
+            <label path="confirmpass">Confirm Password</label>
             <div class="input-group">
-                <input type="password" class="form-control" id="ConfirmPassword" name="confirmpass" placeholder="Confirm password" required="">
+                <input type="password" class="form-control" path="confirmpass" placeholder="Confirm password" required=""/>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
             </div>
         </div>
