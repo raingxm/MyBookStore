@@ -38,7 +38,7 @@
         <div class="form-group">
             <label>Enter Password</label>
             <div class="input-group">
-                <input type="password" class="form-control" name="psswd" placeholder="Enter Password" required=""/>
+                <input type="password" class="form-control" name="passwd" placeholder="Enter Password" required=""/>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
             </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="form-group">
             <label path="confirmpass">Confirm Password</label>
             <div class="input-group">
-                <input type="password" class="form-control" path="confirmpass" placeholder="Confirm password" required=""/>
+                <input type="password" class="form-control" name="confirmpass" placeholder="Confirm password" required=""/>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
             </div>
         </div>
