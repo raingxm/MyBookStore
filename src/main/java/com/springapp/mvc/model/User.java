@@ -4,7 +4,6 @@ public class User {
     private Long user_id;
     private String name;
     private String email;
-    private String address;
     private String passwd;
 
     public User() {
@@ -35,19 +34,11 @@ public class User {
         this.email = email;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getName() {
         return name;
     }
 
     public String getEmail() {
         return email;
-    }
-
-    public String getAddress() {
-        return address;
     }
 }
