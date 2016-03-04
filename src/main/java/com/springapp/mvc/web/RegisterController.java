@@ -27,6 +27,6 @@ public class RegisterController {
                                         @RequestParam("confirmpass") String confirmPass) {
 
         userService.createUser(user, confirmPass);
-        return new ModelAndView("redirect:/");
+        return new ModelAndView("redirect:/login?success=true");
     }
 }
