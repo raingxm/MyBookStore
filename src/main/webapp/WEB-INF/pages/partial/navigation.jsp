@@ -18,10 +18,27 @@
                 <li class="cart"><a href="#">My Cart</a></li>
                 <li class="contact-us"><a href="/contactUs">Contact Us</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="register"><a href="/register">Register</a></li>
-                <li class="login"><a href="/login">Login</a></li>
-            </ul>
+            <c:choose>
+                <c:when test="${pageContext.request.userPrincipal.name == null}">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="register"><a href="/register">Register</a></li>
+                        <li class="login"><a href="/login">Login</a></li>
+                    </ul>
+                </c:when>
+                <c:otherwise>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Me<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/bookList">MyProfile</a></li>
+                                <li><a href="<c:url value="/j_spring_security_logout" />" > Logout</a></li>
+                            </ul>
+                        </li>
+                    <ul>
+                </c:otherwise>
+            </c:choose>
         </div>
     </div>
 </nav>

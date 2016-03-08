@@ -22,8 +22,7 @@
         </c:if>
 
         <c:if test="${pageContext.request.userPrincipal.name != null}">
-            <h2>Welcome : ${pageContext.request.userPrincipal.name}
-                | <a href="<c:url value="/j_spring_security_logout" />" > Logout</a></h2>
+            <h2>Welcome : ${pageContext.request.userPrincipal.name}</h2>
         </c:if>
 
         <spring:url var="authUrl" value="/static/j_spring_security_check" />
