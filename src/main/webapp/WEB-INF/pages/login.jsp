@@ -20,17 +20,23 @@
                 register successful
             </div>
         </c:if>
-        <form action="" class="form-signin">
+
+        <c:if test="${pageContext.request.userPrincipal.name != null}">
+            <h2>Welcome : ${pageContext.request.userPrincipal.name}
+                | <a href="<c:url value="/j_spring_security_logout" />" > Logout</a></h2>
+        </c:if>
+
+        <spring:url var="authUrl" value="/static/j_spring_security_check" />
+
+        <form class="form-signin" action="${authUrl}" method="post">
             <h2 class="form-signin-heading">Please Sign in</h2>
             <label class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <input type="email" id="inputEmail" name="j_username" class="form-control" placeholder="Email address" required="" autofocus="">
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <input type="password" id="inputPassword" name="j_password" class="form-control" placeholder="Password" required="">
             <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="Remember me"/>
-                    Remember me
-                </label>
+                <input id="remember_me" type="checkbox" name="_spring_security_remember_me" value="Remember me"/>
+                <label for="remember_me">Remember me</label>
             </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>

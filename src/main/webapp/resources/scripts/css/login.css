@@ -30,6 +30,10 @@ h2 {
     margin: 70px auto 0;
 }
 
+.form-signin .checkbox #remember_me {
+    margin-left: 0;
+}
+
 .form-signin-heading, .form-signin .checkbox {
     margin-bottom: 10px;
 }
